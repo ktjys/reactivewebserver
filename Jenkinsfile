@@ -1,7 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('Build') {
+      tools {
+        gradle 'gradle6.7'
+      }
       steps {
         sh 'gradle clean build -x test'
       }
