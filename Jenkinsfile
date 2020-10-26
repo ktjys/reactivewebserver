@@ -6,7 +6,7 @@ pipeline {
         gradle 'gradle6.7'
       }
       steps {
-        sh 'gradle clean build'
+        sh 'gradle clean build sonarqube'
       }
     }
 
